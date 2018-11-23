@@ -14,9 +14,8 @@ Summary: Creation and use of R Repositories via helper functions to insert packa
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-drat-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-drat-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-drat-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-drat-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-drat-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-drat-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-drat-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-drat-feedstock)
 
 Current release info
 ====================
