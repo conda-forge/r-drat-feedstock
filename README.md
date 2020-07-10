@@ -5,7 +5,7 @@ Home: http://dirk.eddelbuettel.com/code/drat.html
 
 Package license: GPL (>= 2)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Creation and use of R Repositories via helper functions to insert packages into a repository, and to add repository information  to the current R session. Two primary types of repositories are support: gh-pages at GitHub, as well as local repositories on either the same machine or a local network. Drat is a recursive acronym: Drat R Archive Template.
 
