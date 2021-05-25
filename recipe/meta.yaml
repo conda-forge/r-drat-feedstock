@@ -1,5 +1,4 @@
 {% set version = "0.2.0" %}
-
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: drat_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/drat_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/drat/drat_{{ version }}.tar.gz
@@ -18,7 +16,6 @@ build:
   noarch: generic
   merge_build_host: true  # [win]
   number: 0
-
   rpaths:
     - lib/R/lib/
     - lib/
@@ -26,10 +23,8 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
-
   host:
     - r-base
-
   run:
     - r-base
 
@@ -40,7 +35,7 @@ test:
 
 about:
   home: http://dirk.eddelbuettel.com/code/drat.html
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: 'Creation and use of R Repositories via helper functions to insert packages into a repository, and to add repository information  to the current R session. Two primary types of repositories are support: gh-pages at GitHub, as well as local repositories on either the same machine or a local network. Drat is a recursive
     acronym: Drat R Archive Template.'
   license_family: GPL3
@@ -49,9 +44,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
