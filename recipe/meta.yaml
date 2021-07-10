@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/drat_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/drat/drat_{{ version }}.tar.gz
-  sha256: 56f484eeb8b22976c89fe65afec4c54b8bc77c001ac85be3e2f6a379a541e037
+  sha256: 7da87be5507c7549b657bc831e70a39fc1590e8c0ba383589984326e15053a42
 
 build:
   noarch: generic
