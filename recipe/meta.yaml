@@ -1,4 +1,4 @@
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/drat_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/drat/drat_{{ version }}.tar.gz
-  sha256: 43f9192da925076c749cb2b97be7e7303aeb13466ec36f93343d2264846c678f
+  sha256: 6e8a3a6dbdc00b2b700676fe36507e663f912f7375ffaff20409c517864122b6
 
 build:
   noarch: generic
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
